@@ -1038,22 +1038,11 @@ html {
     padding: 5px 10px 10px 10px;
 }
 
-.chat_bubble pre,
-.chat_bubble code {
-    font-family: 'SF Mono', ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace;
+@font-face {
+    font-family: 'BacktickFix';
+    src: local('SF Mono'), local('Menlo'), local('Consolas'), local('DejaVu Sans Mono');
+    unicode-range: U+0060;
 }
-.chat_bubble pre {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 12px;
-    overflow-x: auto;
-}
-.chat_bubble code {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 4px;
-    padding: 2px 5px;
-}
-.chat_bubble pre code {
-    background-color: transparent;
-    padding: 0;
+.chat_bubble .content {
+    font-family: 'BacktickFix', var(--font-lufga), system-ui;
 }
