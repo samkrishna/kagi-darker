@@ -1040,9 +1040,11 @@ html {
 
 @font-face {
     font-family: 'BacktickFix';
-    src: local('SF Mono'), local('Menlo'), local('Consolas'), local('DejaVu Sans Mono');
+    src: local('Menlo-Regular'), local('Menlo'), local('SFMono-Regular'), local('SF Mono'), local('Consolas'), local('DejaVu Sans Mono'), local('Monaco');
     unicode-range: U+0060;
+    font-weight: 100 900;
+    font-style: normal italic;
 }
-.chat_bubble .content {
-    font-family: 'BacktickFix', var(--font-lufga), system-ui;
+.chat_bubble .content[data-content] {
+    font-family: 'BacktickFix', var(--font-lufga), system-ui !important;
 }
