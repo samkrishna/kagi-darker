@@ -1038,13 +1038,6 @@ html {
     padding: 5px 10px 10px 10px;
 }
 
-@font-face {
-    font-family: 'BacktickFix';
-    src: local('Menlo-Regular'), local('Menlo'), local('SFMono-Regular'), local('SF Mono'), local('Consolas'), local('DejaVu Sans Mono'), local('Monaco');
-    unicode-range: U+0060;
-    font-weight: 100 900;
-    font-style: normal italic;
-}
-body {
-    font-family: 'BacktickFix', var(--font-lufga), system-ui !important;
+code, kbd, samp, pre {
+    font-family: Menlo, 'SF Mono', Monaco, monospace;
 }
